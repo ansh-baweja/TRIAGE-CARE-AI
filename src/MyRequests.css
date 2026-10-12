@@ -1,0 +1,330 @@
+.requests-page {
+  min-height: 100vh;
+  background: #f5faff;
+  color: #10233f;
+}
+
+
+/* ================= HEADER ================= */
+
+.requests-header {
+  height: 80px;
+  background: white;
+  border-bottom: 1px solid #e1eaf3;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+}
+
+.requests-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.requests-logo b {
+  color: #1688e8;
+}
+
+.requests-logo-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 11px;
+
+  background: #1688e8;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+.requests-back {
+  border: none;
+  background: transparent;
+
+  color: #1688e8;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* ================= MAIN ================= */
+
+.requests-container {
+  max-width: 1000px;
+  width: 90%;
+
+  margin: auto;
+
+  padding: 55px 0 70px;
+}
+
+
+/* ================= TITLE ================= */
+
+.requests-title {
+  margin-bottom: 35px;
+}
+
+.requests-badge {
+  display: inline-block;
+
+  background: #e6f4ff;
+  color: #1688e8;
+
+  padding: 9px 16px;
+
+  border-radius: 30px;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.requests-title h1 {
+  font-size: 40px;
+
+  margin: 18px 0 10px;
+}
+
+.requests-title p {
+  color: #71879d;
+
+  line-height: 1.6;
+
+  margin: 0;
+}
+
+
+/* ================= SUMMARY ================= */
+
+.request-summary {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  background: white;
+
+  border: 1px solid #dfebf5;
+
+  border-radius: 16px;
+
+  padding: 22px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 8px 25px rgba(30, 100, 150, 0.05);
+}
+
+.summary-card span {
+  color: #71879d;
+
+  font-size: 14px;
+}
+
+.summary-card strong {
+  font-size: 28px;
+}
+
+.green-text {
+  color: #15945a;
+}
+
+.orange-text {
+  color: #d88a16;
+}
+
+
+/* ================= REQUEST LIST ================= */
+
+.requests-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.request-item {
+  background: white;
+
+  border: 1px solid #dfebf5;
+
+  border-radius: 18px;
+
+  padding: 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  box-shadow: 0 8px 25px rgba(30, 100, 150, 0.05);
+}
+
+
+/* ICON */
+
+.request-item-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.request-item-icon.heart {
+  background: #eaf5ff;
+  color: #1688e8;
+}
+
+.request-item-icon.bone {
+  background: #f3f0ff;
+}
+
+.request-item-icon.skin {
+  background: #fff5e8;
+}
+
+
+/* DETAILS */
+
+.request-details {
+  flex: 1;
+}
+
+.request-details h3 {
+  margin: 0 0 5px;
+
+  font-size: 16px;
+}
+
+.request-details p {
+  margin: 0 0 4px;
+
+  color: #637d95;
+
+  font-size: 13px;
+}
+
+.request-details small {
+  color: #91a2b1;
+
+  font-size: 11px;
+}
+
+
+/* DEPARTMENT */
+
+.request-department {
+  min-width: 120px;
+
+  color: #2474a8;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+/* STATUS */
+
+.request-status {
+  padding: 8px 12px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.pending-status {
+  background: #fff4dc;
+
+  color: #bd8614;
+}
+
+.completed-status {
+  background: #e7f8ef;
+
+  color: #15945a;
+}
+
+
+/* ================= NOTE ================= */
+
+.requests-note {
+  text-align: center;
+
+  color: #8a9bab;
+
+  font-size: 12px;
+
+  margin-top: 25px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+  .requests-header {
+    padding: 0 5%;
+  }
+
+  .requests-container {
+    width: 92%;
+  }
+
+  .requests-title h1 {
+    font-size: 30px;
+  }
+
+  .request-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .request-item {
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+  }
+
+  .request-details {
+    min-width: 180px;
+  }
+
+  .request-department {
+    margin-left: 70px;
+  }
+
+}
